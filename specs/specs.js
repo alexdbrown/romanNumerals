@@ -31,5 +31,8 @@ describe("romanNumerals", function() {
     expect(romanNumerals(19)).to.equal("XIX");
   });
 
+  it("takes 3999 a and prints XIX", function() {
+    expect(romanNumerals(3999)).to.equal("MMMCMXCIX");
+  });
 
 });

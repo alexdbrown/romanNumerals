@@ -1,7 +1,7 @@
 var romanNumerals = function(input) {
 
   var symbols = [["I", 1], ["IV", 4], ["V", 5], ["IX", 9], ["X", 10], ["XL", 40],
-  ["L", 50], ["XC", 90], ["C", 100], ["CD", 400], ["D", 500], ["DM", 900], ["M", 1000]];
+  ["L", 50], ["XC", 90], ["C", 100], ["CD", 400], ["D", 500], ["CM", 900], ["M", 1000]];
   var result = "";
   var inputTracker = input;
 
@@ -11,10 +11,6 @@ var romanNumerals = function(input) {
       result += symbols[i][0].repeat(floor);
       inputTracker -= floor * symbols[i][1];
     }
-
   }
-
-
-
   return result;
 };
